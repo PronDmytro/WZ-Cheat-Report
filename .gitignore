@@ -1,5 +1,7 @@
 # Cache objects
 packer_cache/
-
+.idea/
+venv/
+__pycache__/
 # For built boxes
 *.box
