@@ -1,23 +1,21 @@
 import keyboard
-import pyautogui
-from pynput.mouse import Button, Controller
+
 import time
 
 
 def start():
-    button = Button.left
-    mouse = Controller()
     counter = 0
+
     while True:
         if keyboard.is_pressed('f9'):
             break
         keyboard.send("X")
-        pyautogui.click(673, 491)
-        mouse.click(button)
-        time.sleep(0.006)
-        pyautogui.click(744, 554)
-        mouse.click(button)
-        time.sleep(0.006)
+        time.sleep(0.05)
+        keyboard.send("S")
+        time.sleep(0.05)
+        keyboard.send("space")
+        time.sleep(0.05)
+        keyboard.send("space")
         counter += 1
     print(counter)
     print("Stop")
