@@ -2,6 +2,7 @@
 packer_cache/
 .idea/
 venv/
+build/
 __pycache__/
 # For built boxes
 *.box
